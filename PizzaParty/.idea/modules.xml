@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pizza_Party.iml" filepath="$PROJECT_DIR$/.idea/modules/Pizza_Party.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Pizza_Party.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Pizza_Party.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Pizza_Party.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Pizza_Party.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Pizza_Party.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Pizza_Party.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Pizza_Party.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Pizza_Party.app.unitTest.iml" />
     </modules>
   </component>
 </project>
