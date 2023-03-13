@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
 
     /**
      * TODO: Calculate Total Number of Pizza's needed
-     *
      * @param view
      */
     fun calculateClick(view: View) {
