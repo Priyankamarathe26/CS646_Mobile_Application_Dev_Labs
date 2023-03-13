@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pizza3"
+    tools:context="com.example.pizzaparty.MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:labelFor="@id/num_attend_edit_text"
+        android:text="@string/number_of_people"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num_attend_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:textColor="@color/white"
+        android:hint="@string/noOfPeopleHint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/textView5"
+        app:layout_constraintBaseline_toBaselineOf="@id/textView5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="21dp"
+        android:labelFor="@id/hungry_radio_group"
+        android:text="@string/how_hungry"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/num_attend_edit_text" />
+
+    <RadioGroup
+        android:id="@+id/hungry_radio_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textView4"
+        app:layout_constraintTop_toBottomOf="@id/textView4">
+
+        <RadioButton
+            android:id="@+id/light_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/light" />
+
+        <RadioButton
+            android:id="@+id/medium_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@color/white"
+            android:text="@string/medium" />
+
+        <RadioButton
+            android:id="@+id/ravenous_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/ravenous" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/num_pizzas_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/total_pizzas"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@id/hungry_radio_group"
+        app:layout_constraintTop_toBottomOf="@id/hungry_radio_group" />
+
+    <Button
+        android:id="@+id/calc_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="calculateClick"
+        android:text="@string/calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/num_pizzas_text_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
