@@ -13,7 +13,8 @@ const val TAG = "MainActivity"
 private const val KEY_TOTAL_PIZZAS = "totalPizzas"
 
 /**
- * MainActivity takes user input and displays output on the screen
+ * MainActivity takes user input and displays output on the screen.
+ * It acts as a controller
  */
 class MainActivity : AppCompatActivity() {
 
