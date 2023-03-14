@@ -98,8 +98,7 @@
         android:layout_marginTop="24dp"
         android:onClick="calculateClick"
         android:text="@string/calculate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/num_attend_edit_text"
+        app:layout_constraintStart_toStartOf="@id/num_pizzas_text_view"
         app:layout_constraintTop_toBottomOf="@id/num_pizzas_text_view" />
 </androidx.constraintlayout.widget.ConstraintLayout>
